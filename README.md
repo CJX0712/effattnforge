@@ -16,7 +16,7 @@ and a length-adaptive router (**EffAttnFuse**) — under four rigorous gates:
 |------|--------|--------|
 | **G1** Fidelity | relative Frobenius error vs exact full | Performer 0.0132, EffAttnFuse 0.0176 |
 | **G2** Retrieval | in-context associative recall (top-1) | EffAttnFuse **1.0000** (≥ 0.98× full) ✅ |
-| **G3** Cost | aggregate wall-clock (batch-of-1) | EffAttnFuse **0.62 s** vs full **1.69 s** → **0.366×** (≤ 0.60×) ✅ |
+| **G3** Cost | aggregate wall-clock (batch-of-1) | EffAttnFuse **0.63 s** vs full **2.06 s** → **0.307×** (≤ 0.60×) ✅ |
 | **G4** Determinism | byte-identical core metrics across reruns | **bit_identical = True** ✅ |
 
 **Final grade: `S`** — non-inferior quality *and* strictly cheaper cost, with full
@@ -77,7 +77,6 @@ eval/      metrics + benchmark pipeline (G1–G4)
 pipeline/  multi-seed orchestration + S-grade gate
 examples/  run_demo.py
 tests/     pytest suite (core / attn / eval / benchmark)
-gh_push.py three-tier degrade push (gh → token → bundle)
 ```
 
 ## License & author

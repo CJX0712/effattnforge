@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "effattnforge"
+version = "0.1.0"
+description = "S-grade efficient / sparse attention benchmark (Full, Linear, Performer/FAVOR+, LocalWindow, BlockSparse, EffAttnFuse router)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "晨星" }]
+keywords = ["attention", "transformer", "efficient-attention", "sparse-attention", "performer", "benchmark"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+src = ["."]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "RUF", "PLC", "BLE", "S"]
+ignore = ["S101", "BLE001"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S", "BLE"]
+"gh_push.py" = ["S602", "S607"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["."]

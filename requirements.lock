@@ -1,0 +1,4 @@
+# Pinned, reproducible lock (generated 2026-10-06). Used by CI and `make install`.
+numpy==2.5.3
+pytest==9.1.1
+ruff==0.16.10

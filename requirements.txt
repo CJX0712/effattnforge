@@ -1,0 +1,2 @@
+# Runtime dependency (CPU-only, no CUDA/HF required).
+numpy>=2.0,<3.0

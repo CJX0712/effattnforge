@@ -1,0 +1,332 @@
+{
+  "system": "EffAttnForge",
+  "author": "晨星",
+  "seed": 42,
+  "config": {
+    "seed": 42,
+    "max_len": 4096,
+    "full_threshold": 128,
+    "performer_m_short": 128,
+    "performer_m_long": 256,
+    "block_size": 64,
+    "window": 32,
+    "n_global": 8,
+    "retrieval_d": 64,
+    "retrieval_n_samples": 24,
+    "retrieval_t_values": [
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "cost_t_values": [
+      1024,
+      2048,
+      4096
+    ],
+    "fidelity_d": 32,
+    "fidelity_n_samples": 8,
+    "router_retrieval_floor": 0.98,
+    "n_seeds": 3
+  },
+  "per_variant": {
+    "full": {
+      "retrieval_acc": 1.0,
+      "fidelity_rel": 0.0,
+      "cost": 2.0555626999976084,
+      "mem_peak_mb": 258.0
+    },
+    "linear": {
+      "retrieval_acc": 0.020833333333333332,
+      "fidelity_rel": 0.03868358467308267,
+      "cost": 0.06791140000132145,
+      "mem_peak_mb": 4.03125
+    },
+    "performer": {
+      "retrieval_acc": 1.0,
+      "fidelity_rel": 0.013236370110996572,
+      "cost": 0.7468194000066433,
+      "mem_peak_mb": 32.25
+    },
+    "local_window": {
+      "retrieval_acc": 0.03819444444444445,
+      "fidelity_rel": 3.4775618616796744,
+      "cost": 0.4325503000000026,
+      "mem_peak_mb": 0.03173828125
+    },
+    "block_sparse": {
+      "retrieval_acc": 0.23611111111111113,
+      "fidelity_rel": 1.8412645199013042,
+      "cost": 0.2282883000007132,
+      "mem_peak_mb": 0.09765625
+    },
+    "effattnfuse": {
+      "retrieval_acc": 1.0,
+      "fidelity_rel": 0.017649853598539735,
+      "cost": 0.6301562999979069,
+      "mem_peak_mb": 32.25
+    }
+  },
+  "per_T": [
+    {
+      "variant": "full",
+      "T": 256,
+      "retrieval_acc": 1.0,
+      "fidelity_rel": 0.0,
+      "cost": null,
+      "mem_peak_mb": null
+    },
+    {
+      "variant": "full",
+      "T": 512,
+      "retrieval_acc": 1.0,
+      "fidelity_rel": 0.0,
+      "cost": null,
+      "mem_peak_mb": null
+    },
+    {
+      "variant": "full",
+      "T": 1024,
+      "retrieval_acc": 1.0,
+      "fidelity_rel": 0.0,
+      "cost": 0.06985230000100273,
+      "mem_peak_mb": 16.5
+    },
+    {
+      "variant": "full",
+      "T": 2048,
+      "retrieval_acc": 1.0,
+      "fidelity_rel": 0.0,
+      "cost": 0.27117469999939203,
+      "mem_peak_mb": 65.0
+    },
+    {
+      "variant": "full",
+      "T": 4096,
+      "retrieval_acc": null,
+      "fidelity_rel": null,
+      "cost": 1.7145356999972137,
+      "mem_peak_mb": 258.0
+    },
+    {
+      "variant": "linear",
+      "T": 256,
+      "retrieval_acc": 0.027777777777777776,
+      "fidelity_rel": 0.03769326583096846,
+      "cost": null,
+      "mem_peak_mb": null
+    },
+    {
+      "variant": "linear",
+      "T": 512,
+      "retrieval_acc": 0.041666666666666664,
+      "fidelity_rel": 0.03858537316866617,
+      "cost": null,
+      "mem_peak_mb": null
+    },
+    {
+      "variant": "linear",
+      "T": 1024,
+      "retrieval_acc": 0.013888888888888888,
+      "fidelity_rel": 0.039860738547326656,
+      "cost": 0.010417299999971874,
+      "mem_peak_mb": 1.03125
+    },
+    {
+      "variant": "linear",
+      "T": 2048,
+      "retrieval_acc": 0.0,
+      "fidelity_rel": 0.038594961145369415,
+      "cost": 0.018340200000238838,
+      "mem_peak_mb": 2.03125
+    },
+    {
+      "variant": "linear",
+      "T": 4096,
+      "retrieval_acc": null,
+      "fidelity_rel": null,
+      "cost": 0.03915390000111074,
+      "mem_peak_mb": 4.03125
+    },
+    {
+      "variant": "performer",
+      "T": 256,
+      "retrieval_acc": 1.0,
+      "fidelity_rel": 0.01321212731756251,
+      "cost": null,
+      "mem_peak_mb": null
+    },
+    {
+      "variant": "performer",
+      "T": 512,
+      "retrieval_acc": 1.0,
+      "fidelity_rel": 0.01301266853215162,
+      "cost": null,
+      "mem_peak_mb": null
+    },
+    {
+      "variant": "performer",
+      "T": 1024,
+      "retrieval_acc": 1.0,
+      "fidelity_rel": 0.013675987224339202,
+      "cost": 0.09606190000158676,
+      "mem_peak_mb": 8.25
+    },
+    {
+      "variant": "performer",
+      "T": 2048,
+      "retrieval_acc": 1.0,
+      "fidelity_rel": 0.013044697369932962,
+      "cost": 0.18469810000351572,
+      "mem_peak_mb": 16.25
+    },
+    {
+      "variant": "performer",
+      "T": 4096,
+      "retrieval_acc": null,
+      "fidelity_rel": null,
+      "cost": 0.4660594000015408,
+      "mem_peak_mb": 32.25
+    },
+    {
+      "variant": "local_window",
+      "T": 256,
+      "retrieval_acc": 0.027777777777777776,
+      "fidelity_rel": 1.8289563667816762,
+      "cost": null,
+      "mem_peak_mb": null
+    },
+    {
+      "variant": "local_window",
+      "T": 512,
+      "retrieval_acc": 0.05555555555555555,
+      "fidelity_rel": 2.6123498930752382,
+      "cost": null,
+      "mem_peak_mb": null
+    },
+    {
+      "variant": "local_window",
+      "T": 1024,
+      "retrieval_acc": 0.041666666666666664,
+      "fidelity_rel": 4.018647165274403,
+      "cost": 0.052124199999525445,
+      "mem_peak_mb": 0.03173828125
+    },
+    {
+      "variant": "local_window",
+      "T": 2048,
+      "retrieval_acc": 0.027777777777777776,
+      "fidelity_rel": 5.450294021587379,
+      "cost": 0.1501356000007945,
+      "mem_peak_mb": 0.03173828125
+    },
+    {
+      "variant": "local_window",
+      "T": 4096,
+      "retrieval_acc": null,
+      "fidelity_rel": null,
+      "cost": 0.23029049999968265,
+      "mem_peak_mb": 0.03173828125
+    },
+    {
+      "variant": "block_sparse",
+      "T": 256,
+      "retrieval_acc": 0.5,
+      "fidelity_rel": 0.7891334233366241,
+      "cost": null,
+      "mem_peak_mb": null
+    },
+    {
+      "variant": "block_sparse",
+      "T": 512,
+      "retrieval_acc": 0.20833333333333334,
+      "fidelity_rel": 1.3358073606727896,
+      "cost": null,
+      "mem_peak_mb": null
+    },
+    {
+      "variant": "block_sparse",
+      "T": 1024,
+      "retrieval_acc": 0.15277777777777776,
+      "fidelity_rel": 2.1826697214384017,
+      "cost": 0.02498390000073414,
+      "mem_peak_mb": 0.09765625
+    },
+    {
+      "variant": "block_sparse",
+      "T": 2048,
+      "retrieval_acc": 0.08333333333333333,
+      "fidelity_rel": 3.057447574157402,
+      "cost": 0.07334300000002258,
+      "mem_peak_mb": 0.09765625
+    },
+    {
+      "variant": "block_sparse",
+      "T": 4096,
+      "retrieval_acc": null,
+      "fidelity_rel": null,
+      "cost": 0.12996139999995648,
+      "mem_peak_mb": 0.09765625
+    },
+    {
+      "variant": "effattnfuse",
+      "T": 256,
+      "retrieval_acc": 1.0,
+      "fidelity_rel": 0.01921497545180117,
+      "cost": null,
+      "mem_peak_mb": null
+    },
+    {
+      "variant": "effattnfuse",
+      "T": 512,
+      "retrieval_acc": 1.0,
+      "fidelity_rel": 0.018725705370972585,
+      "cost": null,
+      "mem_peak_mb": null
+    },
+    {
+      "variant": "effattnfuse",
+      "T": 1024,
+      "retrieval_acc": 1.0,
+      "fidelity_rel": 0.019614036201452228,
+      "cost": 0.05926829999953043,
+      "mem_peak_mb": 4.125
+    },
+    {
+      "variant": "effattnfuse",
+      "T": 2048,
+      "retrieval_acc": 1.0,
+      "fidelity_rel": 0.013044697369932962,
+      "cost": 0.2295827999987523,
+      "mem_peak_mb": 16.25
+    },
+    {
+      "variant": "effattnfuse",
+      "T": 4096,
+      "retrieval_acc": null,
+      "fidelity_rel": null,
+      "cost": 0.34130519999962416,
+      "mem_peak_mb": 32.25
+    }
+  ],
+  "gate": {
+    "sota": {
+      "fuse_retrieval_acc": 1.0,
+      "full_retrieval_acc": 1.0,
+      "retrieval_ratio": 1.0,
+      "fuse_aggregate_cost": 0.6301562999979069,
+      "full_aggregate_cost": 2.0555626999976084,
+      "cost_ratio": 0.3065614588154572,
+      "fuse_fidelity_rel": 0.017649853598539735,
+      "full_fidelity_rel": 0.0
+    },
+    "quality_ok": true,
+    "cost_ok": true,
+    "grade": "S"
+  },
+  "determinism": {
+    "bit_identical": true,
+    "max_abs_delta_core": 0.0
+  },
+  "generated_at": "2026-10-06T16:41:39.232453+00:00"
+}
